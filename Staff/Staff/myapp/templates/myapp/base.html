@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'myapp/styles/style.css' %}">
+</head>
+<body>
+    <aside>
+        <div class="logo">
+            <img src="{% static 'myapp/img/people.jpg' %}" alt="">
+            <p>Staff</p>
+        </div>
+        <ul>
+            <li><a href="{% url 'home' %}">Главная</a></li>
+            <li><a href="{% url 'rasp' %}">Распорядок</a></li>
+            <li><img src=" {% static 'myapp/img/plus.png' %}" alt=""><a href="{% url 'create' %}">Добавить</a></li>
+        </ul>
+    </aside>
+    <header>
+        <h1>Список сотрудников</h1>
+    </header>
+{% block content %}{% endblock %}
+</body>
+</html>

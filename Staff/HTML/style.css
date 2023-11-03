@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+aside{
+    background-color: #FEFFC7;
+    width: 179px;
+    height: 100vh;
+}
+
+header{
+    background-color: #FFF06A;
+    width: 100%;
+    height: 113px;
+    position: relative;
+}
+
+.logo{
+    display: flex;
+    padding: 28px 0 67px 23px;
+}
+
+.logo img{
+    width: 38px;
+    height: 38px;
+}
+
+.logo p{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+aside li{
+    list-style-type: none;
+    padding-bottom: 21px;
+    padding-left: 24px;
+}
+
+aside li:nth-child(3){
+    padding-top: 137px;
+}
+
+aside li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+aside li a:hover{
+    text-decoration: underline;
+}
+
+header h1{
+    font-size: 32px;
+    font-weight: 300;
+    padding: 37px;
+}
+
+.text, form, table{
+    position: absolute;
+    top: 150px;
+    left: 220px;
+}
+
+.pvtr{
+    margin-left: 20px ;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table th{
+    font-size: 16px;
+    padding: 15px;
+    border-right: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
+    font-weight: 300;
+}
+
+table td{
+    font-size: 14px;
+    padding: 22px;
+    border-left: 1px solid #DCDCDC;
+}
+
+table td:nth-child(5){
+    border-right: 1px solid #DCDCDC;
+}
+
+table tr:nth-child(1){
+    background-color: #F2F2F2;
+    border: 1px solid #DCDCDC;
+}
+
+table tr:nth-child(4){
+    border-bottom: 1px solid #DCDCDC;
+}
